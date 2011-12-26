@@ -38,11 +38,16 @@ classif = [
     'License :: OSI Approved :: MIT License',
     'Natural Language :: English',
     'Operating System :: POSIX :: Linux',
+    'Operating System :: POSIX :: Linux :: 2.6.13',
     'Operating System :: Microsoft :: Windows',
+    'Operating System :: Microsoft :: Windows :: 2000/NT',
     'Programming Language :: Python',
     'Programming Language :: Python :: 2',
     'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.1',
+    'Programming Language :: Python :: 3.2',
     'Topic :: Software Development :: Libraries :: Python Modules',
     'Topic :: System :: Filesystems',
     'Topic :: System :: Monitoring',
@@ -110,11 +115,11 @@ setup(
     author='Eric Butter',
     author_email='hola@ericbeurre.com',
     license='MIT License',
-    platforms=['Linux','Win']
+    platforms=['Linux','Win'],
     classifiers=classif,
     url='http://github.com/egbutter/pyinotify',
     ext_modules=ext_mod,
     py_modules=['pyinotify'],
     package_dir=package_dir,
-    long_description=open("README").read()
+    long_description=open("README.md").read()
     )
