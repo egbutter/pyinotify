@@ -23,8 +23,10 @@
 #include <sys/syscall.h>
 #include <Python.h>
 
-#if (defined(__NR_inotify_init) && defined(__NR_inotify_add_watch) &&   \
-     defined(__NR_inotify_rm_watch))
+#if (defined(__NR_inotify_init) && \
+        defined(__NR_inotify_add_watch) &&   \
+        defined(__NR_inotify_rm_watch))
+
 /* System calls numbers obtained from included sys/syscall.h. */
 #else
 /* Otherwise rely on known values. */
